@@ -54,7 +54,34 @@ The project includes:
 3. Ensure the Java files are in the `lab4.library` package.
 4. Open `LibraryApp.java`.
 5. Right-click and select **Run As → Java Application**.
-6. Review the output in the Eclipse Console.
+6. Review the output in the Eclipse Console. 
+
+
+## GRASP Refactoring Verification
+
+The refactored application was tested in Eclipse.
+
+### Verified Test Scenarios
+
+- Alice successfully borrowed Dune.
+- Bob successfully borrowed 1984.
+- Bob's attempt to borrow Dune was rejected while unavailable.
+- Alice successfully returned Dune.
+- Bob successfully borrowed Dune after it was returned.
+- The system prevented removal of a borrowed book.
+- Books and members were successfully searched.
+- Moby Dick was successfully removed.
+- Bob was successfully removed after returning his books.
+
+### Final Application State
+
+- Available books: Dune and 1984.
+- Registered member: Alice.
+- Application completed without runtime errors.
+
+These results demonstrate Information Expert, Creator,
+Controller, Low Coupling, and High Cohesion in the
+refactored Library Management System.
 
 ## Conclusion
 
